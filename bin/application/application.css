@@ -1,0 +1,59 @@
+.root{
+	/*https://stackoverflow.com/questions/6092500/how-do-i-remove-the-default-border-glow-of-a-javafx-button-when-selected by JP_*/
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;
+}
+
+.flat-button{
+	/* makes the button have curved edges*/
+   -fx-background-radius: 90.0;
+}
+
+.image-button{
+	/* hides the button so that only the attached image remains */
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-text-fill:transparent;    
+}
+
+
+.radio-button > .radio {
+	/* sets radiobuton to a certain size and color */
+	
+    -fx-color: #B6BABE;
+    -fx-border-width: 0.0;  
+}
+
+.radio-button:selected > .radio{
+  /* removes standard selected effect*/
+    -fx-background-color: #69B1E2;
+}
+
+.radio-button:selected > .radio > .dot {
+	/* removes standard selected effect*/
+    -fx-background-color: transparent;
+}
+
+.vbox-left{
+	/* creates a wave effect between the two chosen colors */
+	-fx-background-color: radial-gradient(center 15% -40%, radius 300%, #0065a4 45%, #00BFFF 50%);
+}
+
+.vbox-right{
+	/* creates a wave effect between the two chosen colors */
+	-fx-background-color: radial-gradient(center 180% -40%, radius 300%, #00BFFF 45%, #0065a4 50%);
+}
+
+.background{
+	-fx-background-color: #0065a4;
+}
+
+.scroll-bar{
+	/* sets the size of the scroll bar */
+	-fx-font-size: 14px;
+}
+
+#name-text{
+	/* sets the style of the font */
+	-fx-font: 16px "Times New Roman";
+}
